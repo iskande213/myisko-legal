@@ -1,578 +1,578 @@
-!DOCTYPE html
-html lang=fr
-head
-  meta charset=UTF-8 
-  meta name=viewport content=width=device-width, initial-scale=1.0 
-  titleMyIsko — Politique de Confidentialité & CGUtitle
-  link rel=preconnect href=httpsfonts.googleapis.com 
-  link rel=preconnect href=httpsfonts.gstatic.com crossorigin 
-  link href=httpsfonts.googleapis.comcss2family=DM+Sansital,opsz,wght@0,9..40,300;0,9..40,400;0,9..40,500;0,9..40,600;1,9..40,300&family=DM+Serif+Displayital@0;1&display=swap rel=stylesheet 
+<!DOCTYPE html>
+<html lang="fr">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>MyIsko — Politique de Confidentialité & CGU</title>
+  <link rel="preconnect" href="https://fonts.googleapis.com" />
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+  <link href="https://fonts.googleapis.com/css2?family=DM+Sans:ital,opsz,wght@0,9..40,300;0,9..40,400;0,9..40,500;0,9..40,600;1,9..40,300&family=DM+Serif+Display:ital@0;1&display=swap" rel="stylesheet" />
 
-  style
-    , before, after {
-      box-sizing border-box;
-      margin 0;
-      padding 0;
+  <style>
+    *, *::before, *::after {
+      box-sizing: border-box;
+      margin: 0;
+      padding: 0;
     }
 
-    root {
-      --bg #F5F5F7;
-      --surface #FFFFFF;
-      --text-primary #1A1A2E;
-      --text-secondary #6E6E73;
-      --text-tertiary #AEAEB2;
-      --accent #1A1A2E;
-      --accent-light #F0F0F5;
-      --border rgba(0,0,0,0.07);
-      --shadow-card 0 2px 20px rgba(0,0,0,0.06), 0 8px 48px rgba(0,0,0,0.05);
-      --shadow-btn 0 2px 8px rgba(26,26,46,0.18);
-      --radius-card 20px;
-      --radius-btn 980px;
+    :root {
+      --bg: #F5F5F7;
+      --surface: #FFFFFF;
+      --text-primary: #1A1A2E;
+      --text-secondary: #6E6E73;
+      --text-tertiary: #AEAEB2;
+      --accent: #1A1A2E;
+      --accent-light: #F0F0F5;
+      --border: rgba(0,0,0,0.07);
+      --shadow-card: 0 2px 20px rgba(0,0,0,0.06), 0 8px 48px rgba(0,0,0,0.05);
+      --shadow-btn: 0 2px 8px rgba(26,26,46,0.18);
+      --radius-card: 20px;
+      --radius-btn: 980px;
     }
 
     html {
-      scroll-behavior smooth;
+      scroll-behavior: smooth;
     }
 
     body {
-      font-family 'DM Sans', -apple-system, BlinkMacSystemFont, 'Segoe UI', sans-serif;
-      background-color var(--bg);
-      color var(--text-primary);
-      min-height 100vh;
-      padding 60px 20px 100px;
-      -webkit-font-smoothing antialiased;
-      line-height 1.6;
+      font-family: 'DM Sans', -apple-system, BlinkMacSystemFont, 'Segoe UI', sans-serif;
+      background-color: var(--bg);
+      color: var(--text-primary);
+      min-height: 100vh;
+      padding: 60px 20px 100px;
+      -webkit-font-smoothing: antialiased;
+      line-height: 1.6;
     }
 
-     ─── Top bar ─── 
+    /* ─── Top bar ─── */
     .topbar {
-      text-align center;
-      margin-bottom 48px;
-      animation fadeDown 0.6s ease both;
+      text-align: center;
+      margin-bottom: 48px;
+      animation: fadeDown 0.6s ease both;
     }
 
-     ─── Logo placeholder ─── 
+    /* ─── Logo placeholder ─── */
     .logo-wrap {
-      display inline-flex;
-      flex-direction column;
-      align-items center;
-      gap 12px;
-      margin-bottom 8px;
+      display: inline-flex;
+      flex-direction: column;
+      align-items: center;
+      gap: 12px;
+      margin-bottom: 8px;
     }
 
     .logo-placeholder {
-      width 72px;
-      height 72px;
-      border-radius 18px;
-      background var(--text-primary);
-      display flex;
-      align-items center;
-      justify-content center;
-      box-shadow 0 4px 24px rgba(26,26,46,0.15);
-      position relative;
-      overflow hidden;
+      width: 72px;
+      height: 72px;
+      border-radius: 18px;
+      background: var(--text-primary);
+      display: flex;
+      align-items: center;
+      justify-content: center;
+      box-shadow: 0 4px 24px rgba(26,26,46,0.15);
+      position: relative;
+      overflow: hidden;
     }
 
-    .logo-placeholderbefore {
-      content '';
-      position absolute;
-      inset 0;
-      background linear-gradient(135deg, rgba(255,255,255,0.12) 0%, transparent 60%);
+    .logo-placeholder::before {
+      content: '';
+      position: absolute;
+      inset: 0;
+      background: linear-gradient(135deg, rgba(255,255,255,0.12) 0%, transparent 60%);
     }
 
     .logo-placeholder svg {
-      width 36px;
-      height 36px;
-      fill #fff;
-      opacity 0.95;
+      width: 36px;
+      height: 36px;
+      fill: #fff;
+      opacity: 0.95;
     }
 
     .app-name {
-      font-family 'DM Sans', sans-serif;
-      font-weight 600;
-      font-size 15px;
-      letter-spacing 0.04em;
-      color var(--text-secondary);
-      text-transform uppercase;
+      font-family: 'DM Sans', sans-serif;
+      font-weight: 600;
+      font-size: 15px;
+      letter-spacing: 0.04em;
+      color: var(--text-secondary);
+      text-transform: uppercase;
     }
 
-     ─── Main card ─── 
+    /* ─── Main card ─── */
     .card {
-      max-width 760px;
-      margin 0 auto;
-      background var(--surface);
-      border-radius var(--radius-card);
-      box-shadow var(--shadow-card);
-      border 1px solid var(--border);
-      overflow hidden;
-      animation fadeUp 0.7s 0.15s ease both;
+      max-width: 760px;
+      margin: 0 auto;
+      background: var(--surface);
+      border-radius: var(--radius-card);
+      box-shadow: var(--shadow-card);
+      border: 1px solid var(--border);
+      overflow: hidden;
+      animation: fadeUp 0.7s 0.15s ease both;
     }
 
-     ─── Card header ─── 
+    /* ─── Card header ─── */
     .card-header {
-      padding 52px 56px 40px;
-      border-bottom 1px solid var(--border);
+      padding: 52px 56px 40px;
+      border-bottom: 1px solid var(--border);
     }
 
     .badge {
-      display inline-block;
-      font-size 11px;
-      font-weight 600;
-      letter-spacing 0.1em;
-      text-transform uppercase;
-      color var(--text-tertiary);
-      margin-bottom 16px;
+      display: inline-block;
+      font-size: 11px;
+      font-weight: 600;
+      letter-spacing: 0.1em;
+      text-transform: uppercase;
+      color: var(--text-tertiary);
+      margin-bottom: 16px;
     }
 
     .card-header h1 {
-      font-family 'DM Serif Display', Georgia, serif;
-      font-weight 400;
-      font-size clamp(26px, 4vw, 36px);
-      line-height 1.2;
-      color var(--text-primary);
-      letter-spacing -0.5px;
-      margin-bottom 12px;
+      font-family: 'DM Serif Display', Georgia, serif;
+      font-weight: 400;
+      font-size: clamp(26px, 4vw, 36px);
+      line-height: 1.2;
+      color: var(--text-primary);
+      letter-spacing: -0.5px;
+      margin-bottom: 12px;
     }
 
     .last-updated {
-      font-size 13px;
-      color var(--text-tertiary);
-      font-weight 400;
+      font-size: 13px;
+      color: var(--text-tertiary);
+      font-weight: 400;
     }
 
-     ─── Card body ─── 
+    /* ─── Card body ─── */
     .card-body {
-      padding 44px 56px 56px;
+      padding: 44px 56px 56px;
     }
 
-     ─── Intro paragraph ─── 
+    /* ─── Intro paragraph ─── */
     .intro {
-      font-size 16px;
-      color var(--text-secondary);
-      line-height 1.75;
-      margin-bottom 48px;
-      padding-bottom 40px;
-      border-bottom 1px solid var(--border);
+      font-size: 16px;
+      color: var(--text-secondary);
+      line-height: 1.75;
+      margin-bottom: 48px;
+      padding-bottom: 40px;
+      border-bottom: 1px solid var(--border);
     }
 
-     ─── Sections ─── 
+    /* ─── Sections ─── */
     .section {
-      margin-bottom 44px;
-      padding-bottom 44px;
-      border-bottom 1px solid var(--border);
+      margin-bottom: 44px;
+      padding-bottom: 44px;
+      border-bottom: 1px solid var(--border);
     }
 
-    .sectionlast-of-type {
-      border-bottom none;
-      margin-bottom 0;
-      padding-bottom 0;
+    .section:last-of-type {
+      border-bottom: none;
+      margin-bottom: 0;
+      padding-bottom: 0;
     }
 
-     Section header with number 
+    /* Section header with number */
     .section-header {
-      display flex;
-      align-items flex-start;
-      gap 16px;
-      margin-bottom 16px;
+      display: flex;
+      align-items: flex-start;
+      gap: 16px;
+      margin-bottom: 16px;
     }
 
     .section-number {
-      flex-shrink 0;
-      width 28px;
-      height 28px;
-      border-radius 8px;
-      background var(--accent-light);
-      display flex;
-      align-items center;
-      justify-content center;
-      font-size 12px;
-      font-weight 700;
-      color var(--text-primary);
-      margin-top 2px;
-      letter-spacing -0.02em;
+      flex-shrink: 0;
+      width: 28px;
+      height: 28px;
+      border-radius: 8px;
+      background: var(--accent-light);
+      display: flex;
+      align-items: center;
+      justify-content: center;
+      font-size: 12px;
+      font-weight: 700;
+      color: var(--text-primary);
+      margin-top: 2px;
+      letter-spacing: -0.02em;
     }
 
     .section h2 {
-      font-family 'DM Sans', sans-serif;
-      font-size 18px;
-      font-weight 600;
-      color var(--text-primary);
-      letter-spacing -0.2px;
-      line-height 1.35;
+      font-family: 'DM Sans', sans-serif;
+      font-size: 18px;
+      font-weight: 600;
+      color: var(--text-primary);
+      letter-spacing: -0.2px;
+      line-height: 1.35;
     }
 
     .section p {
-      font-size 15px;
-      color var(--text-secondary);
-      line-height 1.75;
-      margin-bottom 12px;
+      font-size: 15px;
+      color: var(--text-secondary);
+      line-height: 1.75;
+      margin-bottom: 12px;
     }
 
-    .section plast-child {
-      margin-bottom 0;
+    .section p:last-child {
+      margin-bottom: 0;
     }
 
-     ─── Bullet list ─── 
+    /* ─── Bullet list ─── */
     .bullet-list {
-      list-style none;
-      margin-top 14px;
-      display flex;
-      flex-direction column;
-      gap 10px;
+      list-style: none;
+      margin-top: 14px;
+      display: flex;
+      flex-direction: column;
+      gap: 10px;
     }
 
     .bullet-list li {
-      display flex;
-      align-items flex-start;
-      gap 12px;
-      font-size 15px;
-      color var(--text-secondary);
-      line-height 1.65;
+      display: flex;
+      align-items: flex-start;
+      gap: 12px;
+      font-size: 15px;
+      color: var(--text-secondary);
+      line-height: 1.65;
     }
 
-    .bullet-list libefore {
-      content '';
-      flex-shrink 0;
-      width 5px;
-      height 5px;
-      border-radius 50%;
-      background var(--text-tertiary);
-      margin-top 9px;
+    .bullet-list li::before {
+      content: '';
+      flex-shrink: 0;
+      width: 5px;
+      height: 5px;
+      border-radius: 50%;
+      background: var(--text-tertiary);
+      margin-top: 9px;
     }
 
     .bullet-list li strong {
-      color var(--text-primary);
-      font-weight 500;
+      color: var(--text-primary);
+      font-weight: 500;
     }
 
-     ─── CGU divider ─── 
+    /* ─── CGU divider ─── */
     .cgu-divider {
-      display flex;
-      align-items center;
-      gap 16px;
-      margin 48px 0 44px;
+      display: flex;
+      align-items: center;
+      gap: 16px;
+      margin: 48px 0 44px;
     }
 
-    .cgu-dividerbefore,
-    .cgu-dividerafter {
-      content '';
-      flex 1;
-      height 1px;
-      background var(--border);
+    .cgu-divider::before,
+    .cgu-divider::after {
+      content: '';
+      flex: 1;
+      height: 1px;
+      background: var(--border);
     }
 
     .cgu-divider-label {
-      display flex;
-      align-items center;
-      gap 8px;
-      font-size 12px;
-      font-weight 600;
-      letter-spacing 0.08em;
-      text-transform uppercase;
-      color var(--text-tertiary);
-      white-space nowrap;
+      display: flex;
+      align-items: center;
+      gap: 8px;
+      font-size: 12px;
+      font-weight: 600;
+      letter-spacing: 0.08em;
+      text-transform: uppercase;
+      color: var(--text-tertiary);
+      white-space: nowrap;
     }
 
-     ─── Contact pill ─── 
+    /* ─── Contact pill ─── */
     .contact-pill {
-      display inline-flex;
-      align-items center;
-      gap 8px;
-      background var(--accent-light);
-      border-radius 10px;
-      padding 12px 18px;
-      margin-top 16px;
-      text-decoration none;
+      display: inline-flex;
+      align-items: center;
+      gap: 8px;
+      background: var(--accent-light);
+      border-radius: 10px;
+      padding: 12px 18px;
+      margin-top: 16px;
+      text-decoration: none;
     }
 
     .contact-pill svg {
-      width 14px;
-      height 14px;
-      stroke var(--text-secondary);
-      fill none;
+      width: 14px;
+      height: 14px;
+      stroke: var(--text-secondary);
+      fill: none;
     }
 
     .contact-pill span {
-      font-size 13px;
-      font-weight 500;
-      color var(--text-primary);
+      font-size: 13px;
+      font-weight: 500;
+      color: var(--text-primary);
     }
 
-     ─── Card footer ─── 
+    /* ─── Card footer ─── */
     .card-footer {
-      padding 28px 56px;
-      border-top 1px solid var(--border);
-      background #FAFAFA;
-      display flex;
-      align-items center;
-      justify-content space-between;
-      flex-wrap wrap;
-      gap 12px;
+      padding: 28px 56px;
+      border-top: 1px solid var(--border);
+      background: #FAFAFA;
+      display: flex;
+      align-items: center;
+      justify-content: space-between;
+      flex-wrap: wrap;
+      gap: 12px;
     }
 
     .footer-note {
-      font-size 12px;
-      color var(--text-tertiary);
+      font-size: 12px;
+      color: var(--text-tertiary);
     }
 
-     ─── CTA button ─── 
+    /* ─── CTA button ─── */
     .btn-back {
-      display inline-flex;
-      align-items center;
-      gap 8px;
-      padding 12px 22px;
-      background var(--text-primary);
-      color #fff;
-      font-family 'DM Sans', sans-serif;
-      font-size 14px;
-      font-weight 500;
-      letter-spacing -0.01em;
-      border-radius var(--radius-btn);
-      text-decoration none;
-      box-shadow var(--shadow-btn);
-      transition opacity 0.2s ease, transform 0.2s ease, box-shadow 0.2s ease;
+      display: inline-flex;
+      align-items: center;
+      gap: 8px;
+      padding: 12px 22px;
+      background: var(--text-primary);
+      color: #fff;
+      font-family: 'DM Sans', sans-serif;
+      font-size: 14px;
+      font-weight: 500;
+      letter-spacing: -0.01em;
+      border-radius: var(--radius-btn);
+      text-decoration: none;
+      box-shadow: var(--shadow-btn);
+      transition: opacity 0.2s ease, transform 0.2s ease, box-shadow 0.2s ease;
     }
 
     .btn-back svg {
-      width 14px;
-      height 14px;
-      stroke #fff;
-      fill none;
-      stroke-width 2.2;
-      stroke-linecap round;
-      stroke-linejoin round;
+      width: 14px;
+      height: 14px;
+      stroke: #fff;
+      fill: none;
+      stroke-width: 2.2;
+      stroke-linecap: round;
+      stroke-linejoin: round;
     }
 
-    .btn-backhover {
-      opacity 0.85;
-      transform translateY(-1px);
-      box-shadow 0 4px 16px rgba(26,26,46,0.24);
+    .btn-back:hover {
+      opacity: 0.85;
+      transform: translateY(-1px);
+      box-shadow: 0 4px 16px rgba(26,26,46,0.24);
     }
 
-    .btn-backactive {
-      transform translateY(0);
-      opacity 1;
+    .btn-back:active {
+      transform: translateY(0);
+      opacity: 1;
     }
 
-     ─── Animations ─── 
+    /* ─── Animations ─── */
     @keyframes fadeDown {
-      from { opacity 0; transform translateY(-16px); }
-      to   { opacity 1; transform translateY(0); }
+      from { opacity: 0; transform: translateY(-16px); }
+      to   { opacity: 1; transform: translateY(0); }
     }
 
     @keyframes fadeUp {
-      from { opacity 0; transform translateY(24px); }
-      to   { opacity 1; transform translateY(0); }
+      from { opacity: 0; transform: translateY(24px); }
+      to   { opacity: 1; transform: translateY(0); }
     }
 
-     ─── Responsive ─── 
-    @media (max-width 600px) {
-      body { padding 40px 14px 80px; }
-      .card-header { padding 36px 28px 28px; }
-      .card-body { padding 32px 28px 40px; }
-      .card-footer { padding 20px 28px; flex-direction column; align-items flex-start; }
-      .section-header { gap 12px; }
+    /* ─── Responsive ─── */
+    @media (max-width: 600px) {
+      body { padding: 40px 14px 80px; }
+      .card-header { padding: 36px 28px 28px; }
+      .card-body { padding: 32px 28px 40px; }
+      .card-footer { padding: 20px 28px; flex-direction: column; align-items: flex-start; }
+      .section-header { gap: 12px; }
     }
-  style
-head
-body
+  </style>
+</head>
+<body>
 
-  !-- Top Logo Area --
-  div class=topbar
-    div class=logo-wrap
-      div class=logo-placeholder aria-label=Logo MyIsko
-        !-- Stylized M lettermark — remplacez par votre vrai logo --
-        svg viewBox=0 0 36 36 xmlns=httpwww.w3.org2000svg aria-hidden=true
-          path d=M4 28V8l14 14L32 8v20 stroke=#fff stroke-width=3 stroke-linecap=round stroke-linejoin=round fill=none
-        svg
-      div
-      span class=app-nameMyIskospan
-    div
-  div
+  <!-- Top Logo Area -->
+  <div class="topbar">
+    <div class="logo-wrap">
+      <div class="logo-placeholder" aria-label="Logo MyIsko">
+        <!-- Stylized "M" lettermark — remplacez par votre vrai logo -->
+        <svg viewBox="0 0 36 36" xmlns="http://www.w3.org/2000/svg" aria-hidden="true">
+          <path d="M4 28V8l14 14L32 8v20" stroke="#fff" stroke-width="3" stroke-linecap="round" stroke-linejoin="round" fill="none"/>
+        </svg>
+      </div>
+      <span class="app-name">MyIsko</span>
+    </div>
+  </div>
 
-  !-- Main card --
-  div class=card role=main
+  <!-- Main card -->
+  <div class="card" role="main">
 
-    !-- Header --
-    div class=card-header
-      span class=badgeDocument légalspan
-      h1Politique de Confidentialitébr&amp; Conditions d'Utilisationh1
-      p class=last-updatedDernière mise à jour  6 juin 2026p
-    div
+    <!-- Header -->
+    <div class="card-header">
+      <span class="badge">Document légal</span>
+      <h1>Politique de Confidentialité<br>&amp; Conditions d'Utilisation</h1>
+      <p class="last-updated">Dernière mise à jour : 6 juin 2026</p>
+    </div>
 
-    !-- Body --
-    div class=card-body
+    <!-- Body -->
+    <div class="card-body">
 
-      !-- Intro --
-      p class=intro
-        La présente politique de confidentialité s'applique à l'application mobile strongMyIskostrong, éditée par strongTaleb Iskanderstrong (le « Prestataire »). La transparence et la protection de vos données sont au cœur de notre engagement.
-      p
+      <!-- Intro -->
+      <p class="intro">
+        La présente politique de confidentialité s'applique à l'application mobile <strong>MyIsko</strong>, éditée par <strong>Taleb Iskander</strong> (le « Prestataire »). La transparence et la protection de vos données sont au cœur de notre engagement.
+      </p>
 
-      !-- Section 1 --
-      div class=section
-        div class=section-header
-          span class=section-number1span
-          h2Données collectéesh2
-        div
-        p
-          MyIsko est une application strongLocal-Firststrong. Aucune donnée personnelle ou information relative à vos révisions n'est envoyée sur un serveur distant ou stockée en dehors de votre appareil mobile. Votre vie privée est garantie par le fonctionnement même de l'application.
-        p
-        p
-          Nous privilégions le respect de votre vie privée. L'Application collecte des données techniques strictement nécessaires au fonctionnement et à l'optimisation de nos services 
-        p
-        ul class=bullet-list
-          listrongDonnées techniques strong Adresse IP, type de système d'exploitation mobile.li
-          listrongDonnées d'usage strong Temps passé sur l'application, pages consultées et historique de navigation au sein de l'interface.li
-        ul
-      div
+      <!-- Section 1 -->
+      <div class="section">
+        <div class="section-header">
+          <span class="section-number">1</span>
+          <h2>Données collectées</h2>
+        </div>
+        <p>
+          MyIsko est une application <strong>Local-First</strong>. Aucune donnée personnelle ou information relative à vos révisions n'est envoyée sur un serveur distant ou stockée en dehors de votre appareil mobile. Votre vie privée est garantie par le fonctionnement même de l'application.
+        </p>
+        <p>
+          Nous privilégions le respect de votre vie privée. L'Application collecte des données techniques strictement nécessaires au fonctionnement et à l'optimisation de nos services :
+        </p>
+        <ul class="bullet-list">
+          <li><strong>Données techniques :</strong> Adresse IP, type de système d'exploitation mobile.</li>
+          <li><strong>Données d'usage :</strong> Temps passé sur l'application, pages consultées et historique de navigation au sein de l'interface.</li>
+        </ul>
+      </div>
 
-      !-- Section 2 --
-      div class=section
-        div class=section-header
-          span class=section-number2span
-          h2Cookies et technologies de suivih2
-        div
-        p
+      <!-- Section 2 -->
+      <div class="section">
+        <div class="section-header">
+          <span class="section-number">2</span>
+          <h2>Cookies et technologies de suivi</h2>
+        </div>
+        <p>
           L'Application peut utiliser des outils d'analyse (SDK tiers) pour assurer sa stabilité. Nous nous engageons à obtenir votre consentement explicite lorsque la loi l'exige pour l'utilisation de technologies non essentielles.
-        p
-      div
+        </p>
+      </div>
 
-      !-- Section 3 --
-      div class=section
-        div class=section-header
-          span class=section-number3span
-          h2Accès par des tiersh2
-        div
-        p
+      <!-- Section 3 -->
+      <div class="section">
+        <div class="section-header">
+          <span class="section-number">3</span>
+          <h2>Accès par des tiers</h2>
+        </div>
+        <p>
           Nous ne vendons aucune donnée. Des informations agrégées et totalement anonymisées sont transmises périodiquement à des prestataires de confiance dans le seul but d'améliorer l'expérience utilisateur et les performances de l'application.
-        p
-      div
+        </p>
+      </div>
 
-      !-- Section 4 --
-      div class=section
-        div class=section-header
-          span class=section-number4span
-          h2Vos droits et contrôleh2
-        div
-        p
-          Conformément au RGPD et à la législation en vigueur, vous disposez d'un contrôle total 
-        p
-        ul class=bullet-list
-          listrongDroit d'accès et rectification strong Vous pouvez consulter ou modifier vos données.li
-          listrongDroit à l'oubli strong Vous pouvez demander la suppression totale de vos informations.li
-          listrongDroit de retrait strong La désinstallation de l'Application met fin immédiatement à toute collecte de données depuis votre appareil.li
-        ul
-        a href=mailtoiskandetaleb@gmail.com class=contact-pill aria-label=Envoyer un e-mail au Prestataire
-          svg viewBox=0 0 24 24 aria-hidden=truepath d=M4 4h16c1.1 0 2 .9 2 2v12c0 1.1-.9 2-2 2H4c-1.1 0-2-.9-2-2V6c0-1.1.9-2 2-2zpolyline points=22,6 12,13 2,6svg
-          spaniskandetaleb@gmail.comspan
-        a
-      div
+      <!-- Section 4 -->
+      <div class="section">
+        <div class="section-header">
+          <span class="section-number">4</span>
+          <h2>Vos droits et contrôle</h2>
+        </div>
+        <p>
+          Conformément au RGPD et à la législation en vigueur, vous disposez d'un contrôle total :
+        </p>
+        <ul class="bullet-list">
+          <li><strong>Droit d'accès et rectification :</strong> Vous pouvez consulter ou modifier vos données.</li>
+          <li><strong>Droit à l'oubli :</strong> Vous pouvez demander la suppression totale de vos informations.</li>
+          <li><strong>Droit de retrait :</strong> La désinstallation de l'Application met fin immédiatement à toute collecte de données depuis votre appareil.</li>
+        </ul>
+        <a href="mailto:iskandetaleb@gmail.com" class="contact-pill" aria-label="Envoyer un e-mail au Prestataire">
+          <svg viewBox="0 0 24 24" aria-hidden="true"><path d="M4 4h16c1.1 0 2 .9 2 2v12c0 1.1-.9 2-2 2H4c-1.1 0-2-.9-2-2V6c0-1.1.9-2 2-2z"/><polyline points="22,6 12,13 2,6"/></svg>
+          <span>iskandetaleb@gmail.com</span>
+        </a>
+      </div>
 
-      !-- Section 5 --
-      div class=section
-        div class=section-header
-          span class=section-number5span
-          h2Conservation des donnéesh2
-        div
-        ul class=bullet-list
-          listrongDonnées utilisateur strong Conservées pendant la durée de votre utilisation, plus 12 mois.li
-          listrongDonnées automatiques strong Conservées 24 mois maximum.li
-          listrongDonnées agrégées strong Conservées indéfiniment (anonymisation irréversible).li
-        ul
-      div
+      <!-- Section 5 -->
+      <div class="section">
+        <div class="section-header">
+          <span class="section-number">5</span>
+          <h2>Conservation des données</h2>
+        </div>
+        <ul class="bullet-list">
+          <li><strong>Données utilisateur :</strong> Conservées pendant la durée de votre utilisation, plus 12 mois.</li>
+          <li><strong>Données automatiques :</strong> Conservées 24 mois maximum.</li>
+          <li><strong>Données agrégées :</strong> Conservées indéfiniment (anonymisation irréversible).</li>
+        </ul>
+      </div>
 
-      !-- Section 6 --
-      div class=section
-        div class=section-header
-          span class=section-number6span
-          h2Protection des mineursh2
-        div
-        p
-          MyIsko n'est pas destinée aux mineurs de moins de 16 ans sans le consentement préalable d'un parent ou tuteur légal. Si une donnée concernant un mineur a été transmise par erreur, veuillez nous contacter immédiatement à a href=mailtoiskandetaleb@gmail.com style=colorvar(--text-primary);font-weight500;iskandetaleb@gmail.coma pour suppression immédiate.
-        p
-      div
+      <!-- Section 6 -->
+      <div class="section">
+        <div class="section-header">
+          <span class="section-number">6</span>
+          <h2>Protection des mineurs</h2>
+        </div>
+        <p>
+          MyIsko n'est pas destinée aux mineurs de moins de 16 ans sans le consentement préalable d'un parent ou tuteur légal. Si une donnée concernant un mineur a été transmise par erreur, veuillez nous contacter immédiatement à <a href="mailto:iskandetaleb@gmail.com" style="color:var(--text-primary);font-weight:500;">iskandetaleb@gmail.com</a> pour suppression immédiate.
+        </p>
+      </div>
 
-      !-- Section 7 --
-      div class=section
-        div class=section-header
-          span class=section-number7span
-          h2Sécurité et intégritéh2
-        div
-        p
+      <!-- Section 7 -->
+      <div class="section">
+        <div class="section-header">
+          <span class="section-number">7</span>
+          <h2>Sécurité et intégrité</h2>
+        </div>
+        <p>
           Nous mettons en œuvre des mesures de sécurité physiques et électroniques pour protéger vos données. En cas de violation de données, nous nous engageons à vous informer dans les plus brefs délais, conformément aux exigences légales.
-        p
-      div
+        </p>
+      </div>
 
-      !-- CGU Divider --
-      div class=cgu-divider aria-hidden=true
-        span class=cgu-divider-label
-          svg width=14 height=14 viewBox=0 0 24 24 fill=none stroke=currentColor stroke-width=2 stroke-linecap=round stroke-linejoin=round aria-hidden=truerect x=2 y=3 width=20 height=14 rx=2 ry=2line x1=8 y1=21 x2=16 y2=21line x1=12 y1=17 x2=12 y2=21svg
+      <!-- CGU Divider -->
+      <div class="cgu-divider" aria-hidden="true">
+        <span class="cgu-divider-label">
+          <svg width="14" height="14" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true"><rect x="2" y="3" width="20" height="14" rx="2" ry="2"/><line x1="8" y1="21" x2="16" y2="21"/><line x1="12" y1="17" x2="12" y2="21"/></svg>
           Conditions Générales d'Utilisation
-        span
-      div
+        </span>
+      </div>
 
-      !-- CGU 1 --
-      div class=section
-        div class=section-header
-          span class=section-number1span
-          h2Usageh2
-        div
-        p
+      <!-- CGU 1 -->
+      <div class="section">
+        <div class="section-header">
+          <span class="section-number">1</span>
+          <h2>Usage</h2>
+        </div>
+        <p>
           L'Application MyIsko est fournie « telle quelle ». Le Prestataire ne saurait être tenu responsable de l'usage personnel des informations contenues dans l'application ou des résultats académiques de ses utilisateurs.
-        p
-      div
+        </p>
+      </div>
 
-      !-- CGU 2 --
-      div class=section
-        div class=section-header
-          span class=section-number2span
-          h2Propriété intellectuelleh2
-        div
-        p
-          Tous les contenus de MyIsko sont la propriété exclusive de strongTaleb Iskanderstrong.
-        p
-      div
+      <!-- CGU 2 -->
+      <div class="section">
+        <div class="section-header">
+          <span class="section-number">2</span>
+          <h2>Propriété intellectuelle</h2>
+        </div>
+        <p>
+          Tous les contenus de MyIsko sont la propriété exclusive de <strong>Taleb Iskander</strong>.
+        </p>
+      </div>
 
-      !-- CGU 3 --
-      div class=section
-        div class=section-header
-          span class=section-number3span
-          h2Modificationh2
-        div
-        p
+      <!-- CGU 3 -->
+      <div class="section">
+        <div class="section-header">
+          <span class="section-number">3</span>
+          <h2>Modification</h2>
+        </div>
+        <p>
           Le Prestataire se réserve le droit de modifier les présentes conditions. Toute modification sera publiée avec une date d'entrée en vigueur mise à jour.
-        p
-      div
+        </p>
+      </div>
 
-      !-- CGU 4 --
-      div class=section
-        div class=section-header
-          span class=section-number4span
-          h2Acceptationh2
-        div
-        p
+      <!-- CGU 4 -->
+      <div class="section">
+        <div class="section-header">
+          <span class="section-number">4</span>
+          <h2>Acceptation</h2>
+        </div>
+        <p>
           En utilisant l'Application, vous acceptez expressément les présentes conditions.
-        p
-        a href=mailtoiskandetaleb@gmail.com class=contact-pill aria-label=Contact pour toute question
-          svg viewBox=0 0 24 24 aria-hidden=truepath d=M4 4h16c1.1 0 2 .9 2 2v12c0 1.1-.9 2-2 2H4c-1.1 0-2-.9-2-2V6c0-1.1.9-2 2-2zpolyline points=22,6 12,13 2,6svg
-          spaniskandetaleb@gmail.comspan
-        a
-      div
+        </p>
+        <a href="mailto:iskandetaleb@gmail.com" class="contact-pill" aria-label="Contact pour toute question">
+          <svg viewBox="0 0 24 24" aria-hidden="true"><path d="M4 4h16c1.1 0 2 .9 2 2v12c0 1.1-.9 2-2 2H4c-1.1 0-2-.9-2-2V6c0-1.1.9-2 2-2z"/><polyline points="22,6 12,13 2,6"/></svg>
+          <span>iskandetaleb@gmail.com</span>
+        </a>
+      </div>
 
-    div!-- card-body --
+    </div><!-- /card-body -->
 
-    !-- Card Footer --
-    div class=card-footer
-      span class=footer-note© 2026 MyIsko · Taleb Iskander · Tous droits réservésspan
-      a href=# class=btn-back onclick=history.back(); return false; aria-label=Retour à l'application MyIsko
-        svg viewBox=0 0 24 24 aria-hidden=true
-          polyline points=15 18 9 12 15 6
-        svg
+    <!-- Card Footer -->
+    <div class="card-footer">
+      <span class="footer-note">© 2026 MyIsko · Taleb Iskander · Tous droits réservés</span>
+      <a href="#" class="btn-back" onclick="history.back(); return false;" aria-label="Retour à l'application MyIsko">
+        <svg viewBox="0 0 24 24" aria-hidden="true">
+          <polyline points="15 18 9 12 15 6"/>
+        </svg>
         Retour à l'application
-      a
-    div
+      </a>
+    </div>
 
-  div!-- card --
+  </div><!-- /card -->
 
-body
-html
+</body>
+</html>
