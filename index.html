@@ -7,20 +7,16 @@
     <style>
         :root {
             --bg-color: #F9FAFB;
-            --card-bg: #FFFFFF;
             --text-main: #111827;
             --text-muted: #4B5563;
             --accent: #1E40AF;
-            --border-color: #E5E7EB;
         }
         @media (prefers-color-scheme: dark) {
             :root {
                 --bg-color: #111827;
-                --card-bg: #1F2937;
                 --text-main: #F9FAFB;
                 --text-muted: #9CA3AF;
                 --accent: #60A5FA;
-                --border-color: #374151;
             }
         }
         body {
@@ -44,14 +40,6 @@
             margin-bottom: 8px;
             display: block;
         }
-        .card {
-            background-color: var(--card-bg);
-            border: 1px solid var(--border-color);
-            border-radius: 16px;
-            padding: 32px;
-            margin-bottom: 32px;
-            box-shadow: 0 4px 6px -1px rgba(0, 0, 0, 0.05);
-        }
         h1 {
             font-size: 2rem;
             margin-top: 0;
@@ -61,12 +49,10 @@
         }
         h2 {
             font-size: 1.25rem;
-            margin-top: 28px;
-            margin-bottom: 12px;
-            color: var(--text-main);
+            margin-top: 40px;
+            margin-bottom: 16px;
+            color: var(--accent);
             font-weight: 600;
-            display: flex;
-            align-items: center;
         }
         p, ul {
             font-size: 1rem;
@@ -84,22 +70,9 @@
         .date {
             font-size: 0.875rem;
             color: var(--text-muted);
-            margin-bottom: 24px;
+            margin-bottom: 32px;
             display: block;
             font-style: italic;
-        }
-        .number-badge {
-            display: inline-flex;
-            justify-content: center;
-            align-items: center;
-            background-color: var(--accent);
-            color: white;
-            width: 28px;
-            height: 28px;
-            border-radius: 50%;
-            font-size: 0.875rem;
-            margin-right: 12px;
-            font-weight: bold;
         }
         .btn-return {
             display: inline-block;
@@ -111,13 +84,20 @@
             text-align: center;
             margin-top: 20px;
             transition: opacity 0.2s;
+            text-decoration: none;
         }
         .btn-return:hover {
             opacity: 0.9;
-            text-decoration: none;
+        }
+        hr {
+            border: 0;
+            height: 1px;
+            background-color: var(--text-muted);
+            opacity: 0.2;
+            margin: 40px 0;
         }
         footer {
-            text-align: center;
+            text-align: left;
             font-size: 0.875rem;
             color: var(--text-muted);
             margin-top: 40px;
@@ -128,70 +108,68 @@
 <body>
     <div class="container">
         
-        <div class="card">
-            <span class="surtitle">Document légal</span>
-            <h1>Politique de Confidentialité<br>& Conditions d'Utilisation</h1>
-            <span class="date">Dernière mise à jour : 18 juin 2026</span>
+        <span class="surtitle">Document légal</span>
+        <h1>Politique de Confidentialité<br>& Conditions d'Utilisation</h1>
+        <span class="date">Dernière mise à jour : 18 juin 2026</span>
 
-            <p>La présente politique de confidentialité s'applique à l'application mobile MyIsko, éditée par Taleb Iskander (le « Prestataire »). La transparence et la protection de vos données sont au cœur de notre engagement.</p>
+        <p>La présente politique de confidentialité s'applique à l'application mobile MyIsko, éditée par Taleb Iskander (le « Prestataire »). La transparence et la protection de vos données sont au cœur de notre engagement.</p>
 
-            <h2><span class="number-badge">1</span> Données collectées</h2>
-            <p>MyIsko est une application Local-First. Aucune information relative à vos révisions d'apprentissage n'est envoyée sur un serveur distant ou stockée en dehors de votre appareil mobile.</p>
-            <p>Cependant, pour maintenir l'application gratuite via la publicité, l'Application collecte des données techniques strictement nécessaires au fonctionnement et à la monétisation de nos services :</p>
-            <ul>
-                <li><strong>Données techniques et publicitaires :</strong> Adresse IP, type de système d'exploitation mobile, et identifiants publicitaires uniques de votre appareil.</li>
-                <li><strong>Données d'usage :</strong> Temps passé sur l'application, pages consultées et historique de navigation au sein de l'interface.</li>
-            </ul>
+        <h2>1. Données collectées</h2>
+        <p>MyIsko est une application Local-First. Aucune information relative à vos révisions d'apprentissage n'est envoyée sur un serveur distant ou stockée en dehors de votre appareil mobile. Votre vie privée sur vos révisions est garantie.</p>
+        <p>Cependant, pour maintenir l'application gratuite via la publicité, l'Application collecte des données techniques strictement nécessaires au fonctionnement et à la monétisation de nos services :</p>
+        <ul>
+            <li><strong>Données techniques et publicitaires :</strong> Adresse IP, type de système d'exploitation mobile, et identifiants publicitaires uniques de votre appareil.</li>
+            <li><strong>Données d'usage :</strong> Temps passé sur l'application, pages consultées et historique de navigation au sein de l'interface.</li>
+        </ul>
 
-            <h2><span class="number-badge">2</span> Publicités et technologies de suivi</h2>
-            <p>L'Application utilise des partenaires publicitaires (tels que Google AdMob) pour assurer son financement. Nous nous engageons à obtenir votre consentement explicite (via la pop-up de suivi iOS/Android) lorsque la loi l'exige pour l'utilisation de technologies de ciblage publicitaire non essentielles.</p>
+        <h2>2. Publicités et technologies de suivi</h2>
+        <p>L'Application utilise des partenaires publicitaires (tels que Google AdMob) pour assurer son financement. Nous nous engageons à obtenir votre consentement explicite (via la pop-up de suivi iOS/Android) lorsque la loi l'exige pour l'utilisation de technologies de ciblage publicitaire non essentielles.</p>
 
-            <h2><span class="number-badge">3</span> Accès par des tiers</h2>
-            <p>Nous ne vendons aucune donnée. Des informations techniques et publicitaires agrégées sont transmises périodiquement à des prestataires de confiance (régies publicitaires) dans le seul but d'améliorer l'expérience utilisateur et de vous proposer des annonces adaptées.</p>
+        <h2>3. Accès par des tiers</h2>
+        <p>Nous ne vendons aucune donnée. Des informations techniques et publicitaires agrégées sont transmises périodiquement à des prestataires de confiance (régies publicitaires) dans le seul but d'améliorer l'expérience utilisateur et de vous proposer des annonces adaptées.</p>
 
-            <h2><span class="number-badge">4</span> Vos droits et contrôle</h2>
-            <p>Conformément au RGPD et à la législation en vigueur, vous disposez d'un contrôle total :</p>
-            <ul>
-                <li><strong>Droit d'accès et rectification :</strong> Vous pouvez consulter ou modifier vos données locales.</li>
-                <li><strong>Contrôle publicitaire :</strong> Vous pouvez refuser le suivi publicitaire ou réinitialiser votre identifiant dans les réglages de votre système d'exploitation.</li>
-                <li><strong>Droit de retrait :</strong> La désinstallation de l'Application met fin immédiatement à toute collecte de données depuis votre appareil.</li>
-            </ul>
-            <p>Contact : <a href="mailto:iskandetaleb@gmail.com">iskandetaleb@gmail.com</a></p>
+        <h2>4. Vos droits et contrôle</h2>
+        <p>Conformément au RGPD et à la législation en vigueur, vous disposez d'un contrôle total :</p>
+        <ul>
+            <li><strong>Droit d'accès et rectification :</strong> Vous pouvez consulter ou modifier vos données locales.</li>
+            <li><strong>Contrôle publicitaire :</strong> Vous pouvez refuser le suivi publicitaire ou réinitialiser votre identifiant dans les réglages de votre système d'exploitation.</li>
+            <li><strong>Droit de retrait :</strong> La désinstallation de l'Application met fin immédiatement à toute collecte de données depuis votre appareil.</li>
+        </ul>
+        <p>Contact : <a href="mailto:iskandetaleb@gmail.com">iskandetaleb@gmail.com</a></p>
 
-            <h2><span class="number-badge">5</span> Conservation des données</h2>
-            <ul>
-                <li><strong>Données utilisateur (local) :</strong> Conservées pendant la durée de votre utilisation, plus 12 mois.</li>
-                <li><strong>Données automatiques :</strong> Conservées 24 mois maximum.</li>
-                <li><strong>Données agrégées :</strong> Conservées indéfiniment (anonymisation irréversible).</li>
-            </ul>
+        <h2>5. Conservation des données</h2>
+        <ul>
+            <li><strong>Données utilisateur (local) :</strong> Conservées pendant la durée de votre utilisation, plus 12 mois.</li>
+            <li><strong>Données automatiques :</strong> Conservées 24 mois maximum.</li>
+            <li><strong>Données agrégées :</strong> Conservées indéfiniment (anonymisation irréversible).</li>
+        </ul>
 
-            <h2><span class="number-badge">6</span> Protection des mineurs</h2>
-            <p>MyIsko n'est pas destinée aux mineurs de moins de 16 ans sans le consentement préalable d'un parent ou tuteur légal. Si une donnée concernant un mineur a été transmise par erreur, veuillez nous contacter immédiatement à <a href="mailto:iskandetaleb@gmail.com">iskandetaleb@gmail.com</a> pour suppression immédiate.</p>
+        <h2>6. Protection des mineurs</h2>
+        <p>MyIsko n'est pas destinée aux mineurs de moins de 16 ans sans le consentement préalable d'un parent ou tuteur légal. Si une donnée concernant un mineur a été transmise par erreur, veuillez nous contacter immédiatement à <a href="mailto:iskandetaleb@gmail.com">iskandetaleb@gmail.com</a> pour suppression immédiate.</p>
 
-            <h2><span class="number-badge">7</span> Sécurité et intégrité</h2>
-            <p>Nous mettons en œuvre des mesures de sécurité physiques et électroniques pour protéger vos données. En cas de violation de données, nous nous engageons à vous informer dans les plus brefs délais, conformément aux exigences légales.</p>
-        </div>
+        <h2>7. Sécurité et intégrité</h2>
+        <p>Nous mettons en œuvre des mesures de sécurité physiques et électroniques pour protéger vos données. En cas de violation de données, nous nous engageons à vous informer dans les plus brefs délais, conformément aux exigences légales.</p>
 
-        <div class="card">
-            <h1>Conditions Générales d'Utilisation</h1>
+        <hr>
 
-            <h2><span class="number-badge">1</span> Usage</h2>
-            <p>L'Application MyIsko est fournie « telle quelle ». Le Prestataire ne saurait être tenu responsable de l'usage personnel des informations contenues dans l'application ou des résultats académiques de ses utilisateurs.</p>
+        <h1>Conditions Générales d'Utilisation</h1>
 
-            <h2><span class="number-badge">2</span> Propriété intellectuelle</h2>
-            <p>Tous les contenus de MyIsko sont la propriété exclusive de Taleb Iskander.</p>
+        <h2>1. Usage</h2>
+        <p>L'Application MyIsko est fournie « telle quelle ». Le Prestataire ne saurait être tenu responsable de l'usage personnel des informations contenues dans l'application ou des résultats académiques de ses utilisateurs.</p>
 
-            <h2><span class="number-badge">3</span> Modification</h2>
-            <p>Le Prestataire se réserve le droit de modifier les présentes conditions. Toute modification sera publiée avec une date d'entrée en vigueur mise à jour.</p>
+        <h2>2. Propriété intellectuelle</h2>
+        <p>Tous les contenus de MyIsko sont la propriété exclusive de Taleb Iskander.</p>
 
-            <h2><span class="number-badge">4</span> Acceptation</h2>
-            <p>En utilisant l'Application, vous acceptez expressément les présentes conditions.</p>
-        </div>
+        <h2>3. Modification</h2>
+        <p>Le Prestataire se réserve le droit de modifier les présentes conditions. Toute modification sera publiée avec une date d'entrée en vigueur mise à jour.</p>
+
+        <h2>4. Acceptation</h2>
+        <p>En utilisant l'Application, vous acceptez expressément les présentes conditions.</p>
 
         <footer>
             <p><a href="mailto:iskandetaleb@gmail.com">iskandetaleb@gmail.com</a></p>
             <p>© 2026 MyIsko · Taleb Iskander · Tous droits réservés</p>
-            
+            <br>
             <a href="javascript:history.back()" class="btn-return">Retour à l'application</a>
         </footer>
 
