@@ -3,20 +3,24 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Politique de Confidentialité - MyIsko</title>
+    <title>Mentions Légales - MyIsko</title>
     <style>
         :root {
             --bg-color: #F9FAFB;
+            --card-bg: #FFFFFF;
             --text-main: #111827;
             --text-muted: #4B5563;
             --accent: #1E40AF;
+            --border-color: #E5E7EB;
         }
         @media (prefers-color-scheme: dark) {
             :root {
                 --bg-color: #111827;
+                --card-bg: #1F2937;
                 --text-main: #F9FAFB;
                 --text-muted: #9CA3AF;
                 --accent: #60A5FA;
+                --border-color: #374151;
             }
         }
         body {
@@ -31,15 +35,26 @@
             max-width: 768px;
             margin: 0 auto;
         }
+        .card {
+            background-color: var(--card-bg);
+            border: 1px solid var(--border-color);
+            border-radius: 16px;
+            padding: 32px;
+            margin-bottom: 32px;
+            box-shadow: 0 4px 6px -1px rgba(0, 0, 0, 0.05);
+        }
         h1 {
             font-size: 2rem;
+            margin-top: 0;
             margin-bottom: 8px;
+            font-weight: 700;
         }
         h2 {
-            font-size: 1.25rem;
-            margin-top: 32px;
-            margin-bottom: 16px;
+            font-size: 1.35rem;
+            margin-top: 28px;
+            margin-bottom: 12px;
             color: var(--accent);
+            font-weight: 600;
         }
         p, ul {
             font-size: 1rem;
@@ -52,54 +67,98 @@
         a {
             color: var(--accent);
             text-decoration: none;
+            font-weight: 500;
+        }
+        a:hover {
+            text-decoration: underline;
         }
         .date {
             font-size: 0.875rem;
             color: var(--text-muted);
-            margin-bottom: 32px;
+            margin-bottom: 24px;
             display: block;
+        }
+        hr {
+            border: 0;
+            height: 1px;
+            background-color: var(--border-color);
+            margin: 40px 0;
+        }
+        footer {
+            text-align: center;
+            font-size: 0.875rem;
+            color: var(--text-muted);
+            margin-top: 40px;
         }
     </style>
 </head>
 <body>
     <div class="container">
-        <h1>Politique de Confidentialité de MyIsko</h1>
-        <span class="date">Date d'entrée en vigueur : 17 juin 2026</span>
+        
+        <div class="card">
+            <h1>Politique de Confidentialité</h1>
+            <span class="date">Date d'entrée en vigueur : 17 juin 2026</span>
 
-        <p>Bienvenue sur MyIsko. La présente politique de confidentialité explique de manière transparente comment Taleb Iskander (ci-après "nous" ou "le Fournisseur de services") collecte, utilise et protège vos informations lorsque vous utilisez l'application mobile MyIsko (ci-après "l'Application").</p>
+            <p>La présente politique de confidentialité s'applique à l'application mobile MyIsko, éditée par Taleb Iskander (le « Prestataire »). La transparence et la protection de vos données sont au cœur de notre engagement.</p>
 
-        <h2>1. Les informations que nous collectons</h2>
-        <p>Pour vous offrir la meilleure expérience possible et maintenir l'Application gratuite, nous collectons deux types d'informations :</p>
-        <ul>
-            <li><strong>Les données collectées automatiquement :</strong> L'adresse IP de votre appareil, votre système d'exploitation mobile, des statistiques d'utilisation, ainsi que des <strong>identifiants publicitaires uniques</strong> (liés à votre appareil) nécessaires à l'affichage d'annonces.</li>
-            <li><strong>Les données d'apprentissage :</strong> Vos matières et flashcards sont stockées exclusivement sur votre appareil. Nous n'y avons pas accès.</li>
-            <li><strong>Les données que vous nous fournissez :</strong> Pour personnaliser votre expérience, nous pouvons être amenés à vous demander certaines informations personnelles (nom, adresse e-mail). Celles-ci ne sont collectées qu'avec votre consentement.</li>
-        </ul>
+            <h2>1. Données collectées</h2>
+            <p>MyIsko est une application dont les données d'apprentissage (vos matières et vos flashcards) sont stockées localement de manière exclusive sur votre appareil mobile.</p>
+            <p>Cependant, pour maintenir l'Application gratuite et financer nos services via la publicité, l'Application collecte des données techniques strictement nécessaires au fonctionnement, à la monétisation et à l'optimisation de nos services :</p>
+            <ul>
+                <li><strong>Données techniques :</strong> Adresse IP, type de système d'exploitation mobile, et identifiants publicitaires uniques de votre appareil (liés à votre système).</li>
+                <li><strong>Données d'usage :</strong> Temps passé sur l'application, pages consultées et historique de navigation au sein de l'interface.</li>
+            </ul>
 
-        <h2>2. Comment utilisons-nous vos données ?</h2>
-        <p>Vos informations sont utilisées pour assurer le bon fonctionnement de l'Application, l'améliorer en continu, vous envoyer des notifications importantes et financer le service via l'affichage de publicités pertinentes.</p>
+            <h2>2. Publicité, cookies et technologies de suivi</h2>
+            <p>L'Application utilise des services tiers (tels que Google AdMob) pour afficher des publicités. Ces partenaires publicitaires utilisent des SDK et des identifiants d'appareils pour collecter des informations anonymisées afin de vous proposer des annonces adaptées. Nous nous engageons à obtenir votre consentement explicite (via la pop-up de suivi sur iOS et Android) lorsque la loi l'exige pour l'utilisation de ces technologies.</p>
 
-        <h2>3. Publicité et technologies de suivi</h2>
-        <p>L'Application utilise des services tiers (tels que Google AdMob) pour afficher des publicités. Ces partenaires publicitaires peuvent utiliser des SDK et des identifiants d'appareils pour collecter des informations sur votre utilisation de l'Application afin de vous proposer des annonces personnalisées. Lorsque la loi l'exige, nous vous demanderons votre consentement explicite avant de permettre ce suivi publicitaire.</p>
+            <h2>3. Accès par des tiers</h2>
+            <p>Nous ne vendons aucune donnée personnelle ou d'apprentissage. Des informations techniques agrégées et totalement anonymisées sont transmises périodiquement à nos prestataires de confiance (régies publicitaires et outils d'analyse de stabilité) dans le seul but d'assurer la monétisation, d'améliorer l'expérience utilisateur et de surveiller les performances de l'application.</p>
 
-        <h2>4. Partage et protection de vos données</h2>
-        <p>Nous ne vendons jamais vos données d'apprentissage ou vos informations personnelles. Cependant, vos données techniques et identifiants publicitaires sont partagés avec nos partenaires publicitaires de confiance pour permettre la monétisation de l'Application. Ces transferts sont encadrés par des règles de confidentialité strictes.</p>
+            <h2>4. Vos droits et contrôle</h2>
+            <p>Conformément au RGPD et à la législation en vigueur, vous disposez d'un contrôle total :</p>
+            <ul>
+                <li><strong>Droit d'accès et rectification :</strong> Vous pouvez consulter ou modifier vos données.</li>
+                <li><strong>Droit à l'oubli :</strong> Vous pouvez demander la suppression totale de vos informations.</li>
+                <li><strong>Contrôle de la publicité :</strong> Vous pouvez à tout moment refuser ou réinitialiser le suivi publicitaire ciblé dans les réglages de votre système d'exploitation (iOS/Android).</li>
+                <li><strong>Droit de retrait :</strong> La désinstallation de l'Application met fin immédiatement à toute collecte de données depuis votre appareil.</li>
+            </ul>
 
-        <h2>5. Transferts internationaux</h2>
-        <p>Si vos données doivent être transférées en dehors de votre pays de résidence, nous nous assurons que ce transfert est protégé par des mécanismes juridiques reconnus, tels que les Clauses Contractuelles Types de la Commission européenne.</p>
+            <h2>5. Conservation des données</h2>
+            <ul>
+                <li><strong>Données utilisateur :</strong> Conservées pendant la durée de votre utilisation, plus 12 mois.</li>
+                <li><strong>Données automatiques et publicitaires :</strong> Conservées 24 mois maximum.</li>
+                <li><strong>Données agrégées :</strong> Conservées indéfiniment (anonymisation irréversible).</li>
+            </ul>
 
-        <h2>6. Durée de conservation</h2>
-        <p>Nous ne conservons vos données que le temps nécessaire : les données techniques sont conservées pendant 24 mois maximum, et les données anonymisées indéfiniment.</p>
+            <h2>6. Protection des mineurs</h2>
+            <p>MyIsko n'est pas destinée aux mineurs de moins de 16 ans sans le consentement préalable d'un parent ou tuteur légal. Si une donnée concernant un mineur a été transmise par erreur, veuillez nous contacter immédiatement à <a href="mailto:iskandetaleb@gmail.com">iskandetaleb@gmail.com</a> pour suppression immédiate.</p>
 
-        <h2>7. Protection des mineurs</h2>
-        <p>MyIsko n'est pas destiné aux enfants de moins de 16 ans. Nous ne collectons sciemment aucune donnée auprès de ce public sans le consentement d'un représentant légal.</p>
+            <h2>7. Sécurité et intégrité</h2>
+            <p>Nous mettons en œuvre des mesures de sécurité physiques et électroniques pour protéger vos données. En cas de violation de données, nous nous engageons à vous informer dans les plus brefs délais, conformément aux exigences légales.</p>
+        </div>
 
-        <h2>8. Vos droits et options de retrait</h2>
-        <p>Conformément à la législation, vous disposez du droit d'accéder à vos données, de les rectifier, d'en demander la suppression, ou de retirer votre consentement.</p>
-        <p><strong>Concernant la publicité :</strong> Vous pouvez à tout moment désactiver le suivi publicitaire personnalisé directement depuis les paramètres de votre appareil (en désactivant "Autoriser le suivi" sur iOS, ou en réinitialisant l'identifiant publicitaire dans les paramètres Google sur Android).</p>
+        <div class="card">
+            <h1>Conditions Générales d'Utilisation</h1>
 
-        <h2>9. Nous contacter</h2>
-        <p>Pour exercer vos droits ou poser une question sur la gestion de votre vie privée, vous pouvez nous contacter à tout moment à l'adresse suivante : <strong><a href="mailto:iskandetaleb@gmail.com">iskandetaleb@gmail.com</a></strong></p>
+            <h2>1. Usage</h2>
+            <p>L'Application MyIsko est fournie « telle quelle ». Le Prestataire ne saurait être tenu responsable de l'usage personnel des informations contenues dans l'application ou des résultats académiques de ses utilisateurs.</p>
+
+            <h2>2. Propriété intellectuelle</h2>
+            <p>Tous les contenus, designs et algorithmes originaux de MyIsko sont la propriété exclusive de Taleb Iskander.</p>
+
+            <h2>3. Modification</h2>
+            <p>Le Prestataire se réserve le droit de modifier les présentes conditions. Toute modification sera publiée avec une date d'entrée en vigueur mise à jour.</p>
+
+            <h2>4. Acceptation</h2>
+            <p>En utilisant l'Application, vous acceptez expressément les présentes conditions.</p>
+        </div>
+
+        <footer>
+            <p>Pour toute question ou demande de support : <a href="mailto:iskandetaleb@gmail.com">iskandetaleb@gmail.com</a></p>
+            <p>© 2026 MyIsko · Taleb Iskander · Tous droits réservés</p>
+        </footer>
+
     </div>
 </body>
 </html>
