@@ -1,0 +1,271 @@
+<!DOCTYPE html>
+<html lang="fr">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<title>Confidentialité & Conditions d'Utilisation — MyIsko</title>
+<meta name="description" content="Politique de confidentialité et conditions générales d'utilisation de l'application MyIsko.">
+<link rel="preconnect" href="https://fonts.googleapis.com">
+<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+<link href="https://fonts.googleapis.com/css2?family=Fraunces:opsz,wght@9..144,340;9..144,460;9..144,560&family=Inter:wght@400;500;600&family=IBM+Plex+Mono:wght@500&display=swap" rel="stylesheet">
+<style>
+  :root{
+    --void:#050308;
+    --ink:#F4F1FA;
+    --ink-soft:#A79DBF;
+    --line:rgba(180,150,255,0.16);
+    --violet:#8B5CF6;
+    --violet-bright:#B794FF;
+    --violet-deep:#3D1E7A;
+    --star:#EDE7FF;
+  }
+  *{margin:0;padding:0;box-sizing:border-box;}
+  html{scroll-behavior:smooth;}
+  @media (prefers-reduced-motion: reduce){ *{animation-duration:.01ms !important; scroll-behavior:auto !important;} }
+  body{
+    background:var(--void); color:var(--ink); font-family:'Inter',sans-serif;
+    font-size:16px; line-height:1.7; -webkit-font-smoothing:antialiased; position:relative; overflow-x:hidden;
+  }
+  a{ color:var(--violet-bright); }
+  :focus-visible{ outline:2px solid var(--violet-bright); outline-offset:3px; }
+
+  .stars{
+    position:fixed; inset:0; z-index:0; pointer-events:none;
+    background-image:
+      radial-gradient(1.6px 1.6px at 10% 20%, var(--star), transparent),
+      radial-gradient(1.2px 1.2px at 32% 68%, var(--star), transparent),
+      radial-gradient(1.8px 1.8px at 58% 12%, var(--star), transparent),
+      radial-gradient(1.3px 1.3px at 74% 44%, var(--star), transparent),
+      radial-gradient(1.5px 1.5px at 88% 76%, var(--star), transparent),
+      radial-gradient(1.1px 1.1px at 4% 82%, var(--star), transparent),
+      radial-gradient(1.4px 1.4px at 46% 90%, var(--star), transparent);
+    background-repeat:repeat; background-size:600px 600px;
+    animation:twinkle 8s ease-in-out infinite alternate; opacity:.45;
+  }
+  @keyframes twinkle{ from{opacity:.2;} to{opacity:.55;} }
+
+  .aurora{
+    position:fixed; z-index:0; pointer-events:none; width:800px; height:800px; border-radius:50%;
+    filter:blur(120px); opacity:.4; top:-300px; left:50%;
+    background:radial-gradient(circle at 35% 35%, var(--violet) 0%, var(--violet-deep) 42%, transparent 70%);
+    transform:translateX(-50%); animation:drift 24s ease-in-out infinite;
+  }
+  @keyframes drift{
+    0%,100%{ transform:translateX(-54%) translateY(0) scale(1); }
+    50%{ transform:translateX(-46%) translateY(30px) scale(1.06); }
+  }
+
+  .eyebrow{ font-family:'IBM Plex Mono',monospace; font-size:12px; letter-spacing:.14em; text-transform:uppercase; color:var(--violet-bright); font-weight:500; }
+
+  header{
+    position:sticky; top:0; z-index:50; background:rgba(5,3,8,0.6);
+    backdrop-filter:blur(14px); border-bottom:1px solid var(--line);
+  }
+  .head-wrap{
+    max-width:1180px; margin:0 auto; padding:0 32px; height:72px;
+    display:flex; align-items:center; justify-content:space-between; position:relative; z-index:1;
+  }
+  .logo{ font-family:'Fraunces',serif; font-size:20px; font-weight:560; text-decoration:none; color:var(--ink); }
+  .logo span{ color:var(--violet-bright); }
+  .back{ font-size:13.5px; color:var(--ink-soft); text-decoration:none; display:flex; align-items:center; gap:6px; }
+  .back:hover{ color:var(--ink); }
+  .back svg{ width:14px; height:14px; }
+
+  .layout{
+    max-width:1180px; margin:0 auto; padding:56px 32px 120px;
+    display:grid; grid-template-columns:250px 1fr; gap:64px; align-items:start;
+    position:relative; z-index:1;
+  }
+  @media (max-width:900px){ .layout{ grid-template-columns:1fr; gap:36px; } }
+
+  .toc{ position:sticky; top:96px; }
+  @media (max-width:900px){ .toc{ position:static; } }
+  .toc-title{ font-family:'IBM Plex Mono',monospace; font-size:11px; letter-spacing:.1em; text-transform:uppercase; color:var(--ink-soft); margin-bottom:16px; }
+  .toc-group{ margin-bottom:22px; }
+  .toc-group h4{ font-family:'Fraunces',serif; font-size:14.5px; font-weight:560; color:var(--ink); margin-bottom:8px; }
+  .toc ol{ list-style:none; }
+  .toc a{
+    display:block; font-size:13.5px; color:var(--ink-soft); text-decoration:none;
+    padding:5px 0 5px 14px; border-left:1px solid var(--line);
+    transition:color .2s, border-color .2s;
+  }
+  .toc a:hover, .toc a.active{ color:var(--violet-bright); border-left-color:var(--violet-bright); }
+
+  .doc-head{ margin-bottom:48px; padding-bottom:32px; border-bottom:1px solid var(--line); }
+  .doc-head h1{
+    font-family:'Fraunces',serif; font-weight:460; font-size:clamp(30px,4vw,44px);
+    line-height:1.12; margin:14px 0 14px;
+  }
+  .doc-head .updated{ font-size:14px; color:var(--ink-soft); }
+  .doc-head .intro{ margin-top:20px; font-size:16px; color:var(--ink-soft); max-width:62ch; }
+
+  .doc section{ margin-bottom:52px; scroll-margin-top:96px; }
+  .doc h2.part{ font-family:'IBM Plex Mono',monospace; font-size:12px; letter-spacing:.12em; text-transform:uppercase; color:var(--violet-bright); margin-bottom:6px; }
+  .doc h2.part-title{
+    font-family:'Fraunces',serif; font-size:26px; font-weight:520;
+    margin-bottom:28px; padding-bottom:16px; border-bottom:2px solid var(--violet);
+  }
+  .doc h3{
+    font-family:'Fraunces',serif; font-size:19px; font-weight:560;
+    margin:32px 0 12px; display:flex; align-items:baseline; gap:10px; scroll-margin-top:96px;
+  }
+  .doc h3 .n{ font-family:'IBM Plex Mono',monospace; font-size:13px; color:var(--violet-bright); }
+  .doc p{ font-size:15.5px; color:var(--ink); margin-bottom:14px; max-width:70ch; }
+  .doc ul{ margin:14px 0; max-width:68ch; }
+  .doc li{ font-size:15.5px; color:var(--ink); margin-bottom:10px; padding-left:20px; position:relative; list-style:none; }
+  .doc li::before{ content:"—"; position:absolute; left:0; color:var(--violet-bright); }
+  .doc strong{ font-weight:600; }
+  .doc a{ text-decoration:underline; text-underline-offset:2px; }
+
+  .callout{
+    background:rgba(139,92,246,0.07); border:1px solid var(--line); border-left:3px solid var(--violet);
+    padding:18px 22px; margin:20px 0; font-size:14.5px; color:var(--ink-soft); max-width:68ch;
+    box-shadow:0 0 32px -18px rgba(139,92,246,.6);
+  }
+  .callout strong{ color:var(--ink); }
+
+  footer{ border-top:1px solid var(--line); padding:40px 32px; position:relative; z-index:1; }
+  .foot-wrap{
+    max-width:1180px; margin:0 auto; display:flex; justify-content:space-between;
+    flex-wrap:wrap; gap:12px; font-size:13px; color:var(--ink-soft);
+  }
+</style>
+</head>
+<body>
+
+<div class="stars"></div>
+<div class="aurora"></div>
+
+<header>
+  <div class="head-wrap">
+    <a href="index.html" class="logo">My<span>Isko</span></a>
+    <a href="index.html" class="back">
+      <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><path d="M19 12H5M12 19l-7-7 7-7"/></svg>
+      Retour à l'accueil
+    </a>
+  </div>
+</header>
+
+<div class="layout">
+
+  <nav class="toc" aria-label="Sommaire">
+    <div class="toc-title">Sommaire</div>
+    <div class="toc-group">
+      <h4>Confidentialité</h4>
+      <ol>
+        <li><a href="#c1">1. Données collectées</a></li>
+        <li><a href="#c2">2. Cookies &amp; suivi</a></li>
+        <li><a href="#c3">3. Accès par des tiers</a></li>
+        <li><a href="#c4">4. Vos droits</a></li>
+        <li><a href="#c5">5. Conservation</a></li>
+        <li><a href="#c6">6. Mineurs</a></li>
+        <li><a href="#c7">7. Sécurité</a></li>
+      </ol>
+    </div>
+    <div class="toc-group">
+      <h4>Conditions d'utilisation</h4>
+      <ol>
+        <li><a href="#u1">1. Usage</a></li>
+        <li><a href="#u2">2. Propriété intellectuelle</a></li>
+        <li><a href="#u3">3. Modification</a></li>
+        <li><a href="#u4">4. Acceptation</a></li>
+      </ol>
+    </div>
+  </nav>
+
+  <article class="doc">
+
+    <div class="doc-head">
+      <span class="eyebrow">Document légal</span>
+      <h1>Politique de Confidentialité &amp; Conditions d'Utilisation</h1>
+      <p class="updated">Dernière mise à jour : 18 juin 2026</p>
+      <p class="intro">La présente politique s'applique à l'application mobile MyIsko, éditée par Taleb Iskander (le « Prestataire »). La transparence et la protection de vos données sont au cœur de notre engagement.</p>
+    </div>
+
+    <section>
+      <h2 class="part">Partie I</h2>
+      <h2 class="part-title">Politique de confidentialité</h2>
+
+      <h3 id="c1"><span class="n">01</span> Données collectées</h3>
+      <div class="callout"><strong>Approche local-first.</strong> Vos données de révision et d'apprentissage restent stockées localement sur votre appareil et ne sont jamais transmises à nos serveurs.</div>
+      <p>Cependant, pour vous permettre de créer un profil et pour le financement de l'application, nous collectons les informations suivantes :</p>
+      <ul>
+        <li><strong>Données de compte :</strong> lors de votre inscription, nous collectons de manière sécurisée votre adresse e-mail, votre nom ou pseudo, ainsi que les informations de connexion associées (gérées via notre infrastructure sécurisée Supabase, ou via Apple/Google pour la connexion sociale).</li>
+        <li><strong>Données techniques :</strong> adresse IP, type de système d'exploitation mobile, et identifiants publicitaires uniques de votre appareil.</li>
+        <li><strong>Données d'usage :</strong> temps passé sur l'application, pages consultées et historique de navigation au sein de l'interface.</li>
+      </ul>
+
+      <h3 id="c2"><span class="n">02</span> Cookies et technologies de suivi</h3>
+      <p>L'application utilise des partenaires publicitaires (tels que Google AdMob) pour assurer son financement. Nous nous engageons à obtenir votre consentement explicite (via la pop-up de suivi iOS/Android) lorsque la loi l'exige pour l'utilisation de ces technologies.</p>
+
+      <h3 id="c3"><span class="n">03</span> Accès par des tiers</h3>
+      <p>Nous ne vendons aucune donnée personnelle ou d'apprentissage. Des informations techniques et publicitaires agrégées sont transmises périodiquement à des prestataires de confiance (régies publicitaires) pour assurer la monétisation, améliorer l'expérience utilisateur et les performances de l'application.</p>
+
+      <h3 id="c4"><span class="n">04</span> Vos droits et contrôle</h3>
+      <p>Conformément au RGPD et à la législation en vigueur, vous disposez d'un contrôle total :</p>
+      <ul>
+        <li><strong>Droit d'accès et rectification :</strong> vous pouvez consulter ou modifier vos données d'apprentissage stockées localement.</li>
+        <li><strong>Contrôle publicitaire :</strong> vous pouvez refuser le suivi publicitaire ou réinitialiser votre identifiant dans les réglages de votre système d'exploitation.</li>
+        <li><strong>Droit de retrait :</strong> la désinstallation de l'application met fin immédiatement à toute collecte de données depuis votre appareil.</li>
+        <li><strong>Contact :</strong> <a href="mailto:contact@myisko.site">contact@myisko.site</a></li>
+      </ul>
+
+      <h3 id="c5"><span class="n">05</span> Conservation des données</h3>
+      <ul>
+        <li><strong>Données utilisateur :</strong> conservées pendant la durée de votre utilisation, plus 12 mois.</li>
+        <li><strong>Données techniques et publicitaires :</strong> conservées 24 mois maximum.</li>
+        <li><strong>Données agrégées :</strong> conservées indéfiniment (anonymisation irréversible).</li>
+      </ul>
+
+      <h3 id="c6"><span class="n">06</span> Protection des mineurs</h3>
+      <p>MyIsko n'est pas destinée aux mineurs de moins de 16 ans sans le consentement préalable d'un parent ou tuteur légal. Si une donnée concernant un mineur a été transmise par erreur, veuillez nous contacter immédiatement pour suppression immédiate.</p>
+
+      <h3 id="c7"><span class="n">07</span> Sécurité et intégrité</h3>
+      <p>Nous mettons en œuvre des mesures de sécurité physiques et électroniques pour protéger vos données. En cas de violation de données, nous nous engageons à vous informer dans les plus brefs délais, conformément aux exigences légales.</p>
+    </section>
+
+    <section>
+      <h2 class="part">Partie II</h2>
+      <h2 class="part-title">Conditions générales d'utilisation</h2>
+
+      <h3 id="u1"><span class="n">01</span> Usage</h3>
+      <p>L'application MyIsko est fournie « telle quelle ». Le Prestataire ne saurait être tenu responsable de l'usage personnel des informations contenues dans l'application ou des résultats académiques de ses utilisateurs.</p>
+
+      <h3 id="u2"><span class="n">02</span> Propriété intellectuelle</h3>
+      <p>Tous les contenus originaux, designs et algorithmes de MyIsko sont la propriété exclusive de Taleb Iskander.</p>
+
+      <h3 id="u3"><span class="n">03</span> Modification</h3>
+      <p>Le Prestataire se réserve le droit de modifier les présentes conditions. Toute modification sera publiée avec une date d'entrée en vigueur mise à jour.</p>
+
+      <h3 id="u4"><span class="n">04</span> Acceptation</h3>
+      <p>En utilisant l'application, vous acceptez expressément les présentes conditions.</p>
+    </section>
+
+  </article>
+</div>
+
+<footer>
+  <div class="foot-wrap">
+    <span>© 2026 Taleb Iskander — MyIsko</span>
+    <span><a href="mailto:contact@myisko.site">contact@myisko.site</a></span>
+  </div>
+</footer>
+
+<script>
+  const links = document.querySelectorAll('.toc a');
+  const targets = Array.from(links).map(a => document.querySelector(a.getAttribute('href')));
+  const io = new IntersectionObserver(entries => {
+    entries.forEach(entry => {
+      const idx = targets.indexOf(entry.target);
+      if(idx === -1) return;
+      if(entry.isIntersecting){
+        links.forEach(l => l.classList.remove('active'));
+        links[idx].classList.add('active');
+      }
+    });
+  }, { rootMargin: '-20% 0px -70% 0px' });
+  targets.forEach(t => t && io.observe(t));
+</script>
+
+</body>
+</html>
